@@ -1,0 +1,26 @@
+@import "../../../constants/mixins"
+
+.title
+  margin: 1.2rem 0 1.6rem
+
+.input
+  @include form-input
+
+.error
+  @include form-error
+
+.link
+  @include form-link
+
+.btn
+  @include form-btn
+  &:hover
+    @include form-btn-hover
+
+.checkbox
+  display: flex
+  gap: .4rem
+  margin-top: 1rem
+
+  p
+    font-size: 0.8rem

@@ -1,0 +1,85 @@
+@import './vars'
+
+@mixin btn
+  display: flex
+  align-items: center
+  min-height: 32px
+  color: black
+  border-radius: 12px
+  background: $white
+  padding: 0 22px
+  text-decoration: none
+  font-weight: 700
+  margin-left: 1rem
+  border: none
+  cursor: pointer
+  transition: all 400ms
+  white-space: nowrap
+  font-size: 0.8rem
+
+@mixin btn-hover
+  background: #e8e7e7
+  color: #171717
+
+@mixin container
+  max-width: 100%
+  width: 300px
+  background: $white
+  display: flex
+  flex-direction: column
+  padding: 1rem
+  border-radius: 0 0 22px 22px
+  max-height: 70vh
+  overflow-y: auto
+
+
+@mixin form-input
+  border: 1px solid #d8e2f1
+  border-radius: 4px
+  font-size: 1rem
+  height: 36px
+  margin-top: 2px
+  padding: 2px 4px
+  width: 100%
+
+@mixin form-error
+  font-size: 0.7rem
+  height: 1.2rem
+  color: $red
+
+@mixin form-link
+  font-size: 0.8rem
+  display: block
+  color: black
+
+@mixin form-btn
+  align-items: center
+  width: 100%
+  background-color: #1976d2
+  border: 0
+  border-radius: 4px
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+  color: #fff
+  cursor: pointer
+  display: inline-flex
+  font-size: .8125rem
+  font-weight: 500
+  justify-content: center
+  letter-spacing: .02857em
+  line-height: 1.75
+  min-width: 64px
+  outline: 0
+  padding: 4px 10px
+  position: relative
+  text-decoration: none
+  text-transform: uppercase
+  transition: all 400ms
+  -webkit-user-select: none
+  user-select: none
+  vertical-align: middle
+  margin: 1rem 0
+
+@mixin form-btn-hover
+    background-color: #1565c0
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)
+    transition: all 400ms
